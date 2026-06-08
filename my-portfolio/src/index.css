@@ -1,0 +1,7 @@
+/* Global styles and sensible defaults */
+html,body,#root { height:100%; }
+html { box-sizing:border-box; }
+*,*::before,*::after { box-sizing:inherit; }
+body { margin:0; background: #071025; color:#e6eef8; }
+a { color:inherit }
+img { max-width:100%; display:block }
