@@ -1,7 +1,67 @@
-/* Global styles and sensible defaults */
-html,body,#root { height:100%; }
-html { box-sizing:border-box; }
-*,*::before,*::after { box-sizing:inherit; }
-body { margin:0; background: #071025; color:#e6eef8; }
-a { color:inherit }
-img { max-width:100%; display:block }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 2%;
+    --foreground: 0 0% 100%;
+    --card: 240 5% 6%;
+    --card-foreground: 0 0% 100%;
+    --popover: 240 5% 6%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 186 100% 50%;
+    --primary-foreground: 0 0% 2%;
+    --secondary: 240 5% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 240 5% 12%;
+    --muted-foreground: 0 0% 55%;
+    --accent: 275 87% 53%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 348 100% 59%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 5% 14%;
+    --input: 240 5% 14%;
+    --ring: 186 100% 50%;
+    --chart-1: 186 100% 50%;
+    --chart-2: 348 100% 59%;
+    --chart-3: 275 87% 53%;
+    --chart-4: 186 80% 40%;
+    --chart-5: 348 80% 45%;
+    --radius: 0.5rem;
+
+    --font-inter: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    --cyan: 186 100% 50%;
+    --crimson: 348 100% 59%;
+    --violet: 275 87% 53%;
+  }
+
+  .dark {
+    --background: 0 0% 2%;
+    --foreground: 0 0% 100%;
+    --card: 240 5% 6%;
+    --card-foreground: 0 0% 100%;
+    --popover: 240 5% 6%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 186 100% 50%;
+    --primary-foreground: 0 0% 2%;
+    --secondary: 240 5% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 240 5% 12%;
+    --muted-foreground: 0 0% 55%;
+    --accent: 275 87% 53%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 348 100% 59%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 5% 14%;
+    --input: 240 5% 14%;
+    --ring: 186 100% 50%;
+    --chart-1: 186 100% 50%;
+    --chart-2: 348 100% 59%;
+    --chart-3: 275 87% 53%;
+    --chart-4: 186 80% 40%;
+    --chart-5: 348 80% 45%;
+  }
+}
