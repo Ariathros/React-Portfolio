@@ -18,13 +18,29 @@ const projects: Project[] = [
   {
     title: 'Personal Website',
     description: 'A responsive portfolio built with React and Vite.',
-    repo: 'https://github.com/yourusername/personal-website',
+    repo: 'https://ariathros.github.io/React-Portfolio/',
   },
   {
-    title: 'Task Manager',
-    description: 'A small task management SPA with local storage persistence.',
-    repo: 'https://github.com/yourusername/task-manager',
+    title: 'CPE Room and Equipment Management System',
+    description: 'A web application for managing CPE rooms and equipment with a user-friendly interface.',
+    repo: 'https://github.com/Ariathros/cpelab',
   },
+  {
+    title: 'Descendants of Death',
+    description: 'A 2D action platformer game built with Unity, featuring a unique art style and challenging gameplay.',
+    repo: 'https://github.com/Ariathros/DescendantsOfDeath'
+  },
+  {
+    title: 'React JS Projects',
+    description: 'A collection of small React projects and experiments.',
+    repo: 'https://github.com/Ariathros/react-course',
+  },
+  {
+    title: 'DataAqua',
+    description: 'A data visualization tool for exploring and analyzing aquatic ecosystems.', 
+    repo: 'https://github.com/Ariathros/data-aqua'
+  }
+
 ]
 
 const novels: Novel[] = [

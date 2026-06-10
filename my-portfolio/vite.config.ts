@@ -8,4 +8,9 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
+  base: './', // ensures relative paths
+  build: {
+  outDir: 'dist',
+  assetsDir: 'assets',
+  }
 })
