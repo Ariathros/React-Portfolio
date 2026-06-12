@@ -3,17 +3,15 @@ import { motion } from 'framer-motion';
 const skills = [
   { name: 'React / Next.js', level: 96 },
   { name: 'TypeScript', level: 92 },
-  { name: 'Three.js / WebGL', level: 85 },
+  { name: 'Framer Motion', level: 85 },
   { name: 'Node.js', level: 90 },
   { name: 'Python / Data Engineering', level: 82 },
-  { name: 'AWS / Cloud Infrastructure', level: 78 },
+  { name: 'C# / Object-Oriented Programming', level: 80 },
 ];
 
 const stats = [
   { value: '6+', label: 'Years Experience' },
-  { value: '40+', label: 'Projects Shipped' },
-  { value: '15+', label: 'Enterprise Clients' },
-  { value: '99.5%', label: 'Uptime Average' },
+  { value: '5', label: 'Projects Completed' },
 ];
 
 export default function AboutSection() {
@@ -40,18 +38,8 @@ export default function AboutSection() {
               <p>
                 I'm a full-stack React developer who operates at the intersection of
                 three worlds: <span className="text-crimson font-medium">game development</span>,{' '}
-                <span className="text-cyan font-medium">web engineering</span>, and{' '}
-                <span className="text-violet font-medium">big data analytics</span>.
-              </p>
-              <p>
-                My approach is systems-first. I architect scalable foundations that handle
-                millions of events, render at 60fps, and deliver pixel-perfect interfaces.
-                Every project starts with the data model and ends with the user experience.
-              </p>
-              <p>
-                When I'm not shipping production code, I'm exploring WebGPU, contributing
-                to open-source visualization libraries, and writing about the future of
-                interactive data experiences.
+                <span className="text-cyan font-medium">web development and design</span>, and{' '}
+                <span className="text-violet font-medium">creating stories</span>.
               </p>
             </div>
 

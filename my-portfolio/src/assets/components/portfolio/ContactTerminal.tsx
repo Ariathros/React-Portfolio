@@ -20,6 +20,7 @@ export default function ContactTerminal() {
     }
   }, [lines]);
 
+
   const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     if (!name || !email || !message) return;

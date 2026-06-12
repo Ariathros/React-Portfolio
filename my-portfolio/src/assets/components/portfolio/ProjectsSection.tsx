@@ -4,44 +4,39 @@ import ProjectCard from './ProjectCard';
 const gameProjects = [
   {
     category: 'game',
-    title: 'Shatter Engine',
-    description: 'A physics-based puzzle game built with React Three Fiber where players manipulate gravity to shatter crystalline structures across 50+ levels. Real-time particle systems and dynamic lighting.',
-    stack: ['React', 'Three.js', 'Cannon.js', 'GLSL', 'WebGL'],
-    year: 2024,
-    image: 'https://media.base44.com/images/public/6a1588d21d674fde09b11a61/35477de78_generated_1836d5d3.png',
+    title: 'Descendants of Death',
+    description: 'A Hack & Slash 2D Game based on ShadowFight, but with more enemies and increasing levels of waves.',
+    stack: ['C#', 'JavaScript', 'Blender', 'Adobe Animate', 'Unity'],
+    year: 2022,
+    image: 'https://i.ibb.co/ycMrNysw/dod.png',
     metrics: [
-      { label: 'Active Players', value: '12K+' },
-      { label: 'Levels', value: '50+' },
+      { label: 'Levels', value: 'Infinity+' },
       { label: 'FPS Target', value: '60' },
-      { label: 'Physics Objects', value: '500+' },
     ],
   },
   {
-    category: 'game',
-    title: 'Neon Arena',
-    description: 'Multiplayer browser-based battle arena with real-time WebSocket communication, ECS architecture, and procedurally generated arenas. Supports up to 16 concurrent players.',
-    stack: ['React', 'Socket.io', 'Node.js', 'Canvas API', 'Redis'],
-    year: 2023,
-    image: 'https://media.base44.com/images/public/6a1588d21d674fde09b11a61/13f5f7b0f_generated_24a2cad4.png',
+    category: 'animation',
+    title: 'Jam vs. Kasu',
+    description: 'A battle between a street fighter and a hired assassin.',
+    stack: ['Adobe Flash'],
+    year: 2019,
+    image: 'https://i.ytimg.com/vi/t6eVZmFHJXY/hqdefault.jpg',
     metrics: [
-      { label: 'Concurrent Users', value: '16' },
-      { label: 'Latency', value: '<30ms' },
-      { label: 'Maps Generated', value: '∞' },
-      { label: 'Rating', value: '4.8/5' },
+      { label: 'Views', value: '64' },
+      { label: 'Duration (mins)', value: '2' },
+      { label: 'Creation Time (Weeks)', value: '2' },
     ],
   },
   {
-    category: 'game',
-    title: 'Void Runner',
-    description: 'An infinite runner with procedural terrain generation and WebGPU-accelerated rendering. Features adaptive difficulty and a leaderboard system powered by a serverless backend.',
-    stack: ['React', 'WebGPU', 'Zustand', 'Supabase', 'WASM'],
-    year: 2023,
-    image: 'https://media.base44.com/images/public/6a1588d21d674fde09b11a61/b8367021e_generated_a0619fee.png',
+    category: 'animation',
+    title: 'Alphabet Collab Part',
+    description: "A comedy animation in collaboration to the Alphabet Collab hosted on Hyun's Dojo",
+    stack: ['Adobe Flash'],
+    year: 2019,
+    image: 'https://i.ytimg.com/vi/T-UrMp2HPtA/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCwGss6BDW6DvFS7CXjHpqCc_GehQ',
     metrics: [
-      { label: 'Downloads', value: '8K+' },
-      { label: 'Avg Session', value: '14min' },
-      { label: 'Render Pipeline', value: 'WebGPU' },
-      { label: 'Bundle Size', value: '420KB' },
+      { label: 'Views', value: '45' },
+      { label: 'Duration (s)', value: '13' },
     ],
   },
 ];
@@ -49,44 +44,35 @@ const gameProjects = [
 const webProjects = [
   {
     category: 'web',
-    title: 'Flux Commerce',
-    description: 'A headless e-commerce platform with server-side rendering, dynamic product filtering, and a custom CMS. Handles 100K+ SKUs with sub-second search powered by Algolia.',
-    stack: ['React', 'Next.js', 'TypeScript', 'Algolia', 'Stripe'],
-    year: 2024,
-    image: 'https://media.base44.com/images/public/6a1588d21d674fde09b11a61/f7251abc1_generated_d2e346da.png',
+    title: 'Computer Engineering Room and Equipment Reservation System',
+    description: 'The purpose of this project is to manage the services offered by the Computer Engineering Laboratory such as borrowing of equipments and room reservations.',
+    stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'Bootstrap'],
+    year: 2022,
+    image: '/cpelab.png',
     metrics: [
-      { label: 'SKUs', value: '100K+' },
-      { label: 'Load Time', value: '0.8s' },
-      { label: 'Conversion', value: '+34%' },
-      { label: 'Lighthouse', value: '98' },
+      { label: 'Users', value: '5,000' },
     ],
   },
   {
     category: 'web',
-    title: 'Synapse SaaS',
-    description: 'A collaborative project management platform with real-time document editing, Kanban boards, and role-based access control serving 500+ teams globally.',
-    stack: ['React', 'GraphQL', 'PostgreSQL', 'AWS', 'Docker'],
-    year: 2024,
-    image: 'https://media.base44.com/images/public/6a1588d21d674fde09b11a61/15705b4d4_generated_48aaec60.png',
-    metrics: [
-      { label: 'Active Teams', value: '500+' },
-      { label: 'Uptime', value: '99.9%' },
-      { label: 'API Latency', value: '45ms' },
-      { label: 'Daily Edits', value: '50K+' },
-    ],
-  },
-  {
-    category: 'web',
-    title: 'Meridian CMS',
-    description: 'A developer-first content management system with a visual block editor, API-first architecture, and multi-tenant support. Used by 200+ content creators.',
-    stack: ['React', 'Node.js', 'MongoDB', 'Redis', 'Cloudflare'],
+    title: 'DataAqua: IOT-Based Smart Fish Cultivating System',
+    description: 'A tool to monitor the water levels of Tilapia fish ponds and improve Tilapia mortality rate.',
+    stack: ['Arduino','HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'Bootstrap'],
     year: 2023,
-    image: 'https://media.base44.com/images/public/6a1588d21d674fde09b11a61/4e47c07d4_generated_da8fd34d.png',
+    image: '/dataaqua.jpg',
     metrics: [
-      { label: 'Creators', value: '200+' },
-      { label: 'Content Blocks', value: '40+' },
-      { label: 'API Calls/day', value: '2M' },
-      { label: 'CDN Hit Rate', value: '97%' },
+      { label: 'Uptime', value: '99.9%' },
+      { label: 'Prediction Accuracy', value: '90%' },
+    ],
+  },
+  {
+    category: 'web',
+    title: 'HandyWash: Laundry Delivery Service',
+    description: 'A website/app which aims to provide delivery service for customers and laundry stores.',
+    stack: ['React', 'Node.js', 'MongoDB', 'Tailwind', 'Framer Motion'],
+    year: 2023,
+    image: '/laundrystore.png',
+    metrics: [
     ],
   },
 ];
@@ -143,8 +129,8 @@ export default function ProjectsSection() {
         {/* Game Dev */}
         <div className="mb-32">
           <SectionHeader
-            label="001 — Game Development"
-            title="Interactive Worlds"
+            label="001 — Game Development and Animation"
+            title="Interactive Worlds and Stories"
             colorClass="text-crimson"
             accentBorder="border-crimson"
           />

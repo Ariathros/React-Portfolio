@@ -5,6 +5,7 @@ import HeroSection from "./assets/components/portfolio/HeroSection"
 import Navbar from "./assets/components/portfolio/Navbar"
 import NovelsSection from "./assets/components/portfolio/NovelsSection"
 import ProjectsSection from "./assets/components/portfolio/ProjectsSection"
+import TwitchSection from "./assets/components/portfolio/TwitchSection"
 
 // type Project = {
 //   title: string
@@ -80,6 +81,7 @@ function App() {
       <HeroSection />
       <ProjectsSection />
       <NovelsSection />
+      <TwitchSection />
       <AboutSection />
       <ContactTerminal />
       <Footer />

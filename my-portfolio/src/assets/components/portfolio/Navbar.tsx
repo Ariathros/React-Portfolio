@@ -1,30 +1,32 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { label: 'Projects', href: '#projects' },
   { label: 'Novels', href: '#novels' },
+  { label: 'Twitch', href: '#twitch' },
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ];
-export default function Navbar (){
-    const [scrolled, setScrolled] = useState(false);
-    const [mobileOpen, setMobileOpen] = useState(false);
 
-    useEffect(() => {
-        const onScroll = () => setScrolled(window.scrollY > 60);
-        window.addEventListener('scroll', onScroll);
-        return () => window.removeEventListener('scroll', onScroll);
-    }, []);
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-    const scrollTo = (href: string) => {
-        setMobileOpen(false);
-        const el = document.querySelector(href);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-    };
-    
-    return (
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const scrollTo = (href: string) => {
+    setMobileOpen(false);
+    const el = document.querySelector(href);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  return (
     <motion.nav
       initial={{ y: -80 }}
       animate={{ y: 0 }}
