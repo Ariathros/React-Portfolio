@@ -20,7 +20,7 @@ export default function Footer() {
         </div> */}
 
         <div className="font-mono text-[10px] text-muted-foreground/50 tracking-wider">
-          BUILT WITH REACT + TAILWIND
+          BUILT WITH REACT + TAILWIND, FRAMER MOTION, EMAILJS
         </div>
       </div>
     </footer>

@@ -7,6 +7,9 @@ import NovelsSection from "./assets/components/portfolio/NovelsSection"
 import ProjectsSection from "./assets/components/portfolio/ProjectsSection"
 import TwitchSection from "./assets/components/portfolio/TwitchSection"
 
+import { useEffect } from "react";
+import emailjs from "@emailjs/browser";
+
 // type Project = {
 //   title: string
 //   description: string
@@ -75,6 +78,10 @@ import TwitchSection from "./assets/components/portfolio/TwitchSection"
 // // ]
 
 function App() {
+  useEffect(() => {
+  emailjs.init("SzK4duyCYaRExI9dt");
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navbar />

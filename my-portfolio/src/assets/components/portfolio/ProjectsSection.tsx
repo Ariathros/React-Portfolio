@@ -20,7 +20,7 @@ const gameProjects = [
     description: 'A battle between a street fighter and a hired assassin.',
     stack: ['Adobe Flash'],
     year: 2019,
-    image: 'https://i.ytimg.com/vi/t6eVZmFHJXY/hqdefault.jpg',
+    image: 'jamvkasu.png',
     metrics: [
       { label: 'Views', value: '64' },
       { label: 'Duration (mins)', value: '2' },

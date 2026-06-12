@@ -1,8 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Terminal } from 'lucide-react';
+import emailjs from "@emailjs/browser";
 
 export default function ContactTerminal() {
+  const form = useRef<HTMLFormElement | null>(null);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -21,7 +23,7 @@ export default function ContactTerminal() {
   }, [lines]);
 
 
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     if (!name || !email || !message) return;
 
@@ -34,7 +36,22 @@ export default function ContactTerminal() {
       { type: 'success', text: '// ✓ Message transmitted successfully.' },
       { type: 'success', text: '// ✓ Response estimated within 24h.' },
     ]);
-    setSent(true);
+    
+    const formElement = form.current;
+    if (!formElement) return;
+
+    try {
+      const response = await emailjs.sendForm(
+        "service_aetg3x8",
+        "template_8k6me4q",
+        formElement,
+        "SzK4duyCYaRExI9dt"
+      );
+        console.log("Email sent successfully!", response);
+        setSent(true);
+      } catch (error) {
+        console.error("Failed to send email", error);
+      }
   };
 
   return (
@@ -99,11 +116,12 @@ export default function ContactTerminal() {
 
           {/* Form */}
           {!sent ? (
-            <form onSubmit={handleSubmit} className="border-t border-border p-5 md:p-6 space-y-4">
+            <form ref={form} onSubmit={handleSubmit} className="border-t border-border p-5 md:p-6 space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="font-mono text-[10px] tracking-wider text-muted-foreground uppercase mb-2 block">Name</label>
                   <input
+                    name="name"
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -114,6 +132,7 @@ export default function ContactTerminal() {
                 <div>
                   <label className="font-mono text-[10px] tracking-wider text-muted-foreground uppercase mb-2 block">Email</label>
                   <input
+                    name="email"
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -125,6 +144,7 @@ export default function ContactTerminal() {
               <div>
                 <label className="font-mono text-[10px] tracking-wider text-muted-foreground uppercase mb-2 block">Message</label>
                 <textarea
+                  name="message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Let's build something amazing..."
